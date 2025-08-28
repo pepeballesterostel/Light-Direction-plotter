@@ -17,7 +17,7 @@ let minDate;
 let maxDate;
 
 function preload() {
-  loadJSON('TINTORETTO.json', function(data) {
+  loadJSON('CARAVAGGIO.json', function(data) {
     paintings = data;
     console.log("JSON loaded", paintings);
   });
@@ -48,7 +48,7 @@ function draw() {
   textAlign(CENTER, BOTTOM);
   noStroke();
   let textColor = colors[Math.floor(colors.length / 2)];
-  let artist = "TINTORETTO";
+  let artist = "Michelangelo Merisi da Caravaggio";
   fill(textColor);
   text(artist, width / 2, height - 95);
   textSize(10);
